@@ -59,3 +59,7 @@
 计划整理分类 & 目录：(文档已完结请选中 checkbox)
 - [ ] [用户](docs/user)
     - [ ] [用户信息](docs/user/user_info.md)
+     
+## 交流
+### ⚠注意：开源社群欢迎交流探讨，拒绝咨询、不支持合作，黑产号一经发现立即拉黑并举报相关 SRC
+ - QQ交流群 [加群链接](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m7l22Rbe39Jpoe2MVwZBdR1GNJFCTSGO&authKey=qwwomxgR8Nudz7uVnuEj3R9mphn6%2FEVzMZ%2FviimtZKimuaJjdqsat%2FHbYuuvLNdN&noverify=0&group_code=830159613)
