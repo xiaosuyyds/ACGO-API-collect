@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../MacwOJ"
+		},
+		{
+			"name": "BinaryCalculator",
+			"path": "../../../../../BinaryCalculator"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"8052.h": "c",
+			"8051.h": "c"
+		}
+	}
+}
