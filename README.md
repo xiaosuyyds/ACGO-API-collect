@@ -1,8 +1,32 @@
-# ACGO-API-collect
-acgo.cn-API收集整理
+<h1 align="center">ACGO API API收集与整理</h1>
+<p align="center" class="shields">
+    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/issues" style="text-decoration:none">
+        <img src="https://img.shields.io/github/issues/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub issues"/>
+    </a>
+    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/stargazers" style="text-decoration:none" >
+        <img src="https://img.shields.io/github/stars/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub stars"/>
+    </a>
+    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/network" style="text-decoration:none" >
+        <img src="https://img.shields.io/github/forks/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub forks"/>
+    </a>
+    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/actions">
+        <img src="https://img.shields.io/github/actions/workflow/status/xiaosuyyds/ACGO-API-collect/vuepress-deploy.yml">
+    </a>
+    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/blob/master/LICENSE" style="text-decoration:none" >
+        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="GitHub license"/>
+    </a>
+</p>
 
-## 野生API文档
-## 不断更新中....
+<!--
+<p align="center" class="trendshift">
+  <a href="https://trendshift.io/repositories/3218" target="_blank">
+    <img src="https://trendshift.io/api/badge/repositories/3218" alt="xiaosuyyds%2FACGO-API-collect | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+  </a>
+</p>
+-->
+
+<h3 align="center">野生API文档</h3>
+<h3 align="center">不断更新中....</h3>
 
 本项目旨在对 [ACGO.cn](https://www.acgo.cn/) 散落在世界各地的野生 API 进行收集整理，研究使用方法并对其进行说明，运用了黑箱法、控制变量法、代码逆向分析、拆包及反编译法、网络抓包法等研究办法
 
@@ -14,7 +38,7 @@ acgo.cn-API收集整理
 4. 由于本项目的特殊性，可能随时停止开发或删档
 5. 本项目为开源项目，不接受任何形式的催单和索取行为，更不容许存在付费内容
 
-## 🌱参与贡献
+## 参与贡献
 
 欢迎各位 dalao 对本项目做出贡献，也希望每个使用者都能提出宝贵的意见
 
@@ -25,8 +49,8 @@ acgo.cn-API收集整理
 
 ## 鸣谢
 
-### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
-~~本来只是想要做一个爬虫~~
+### 本仓库目录结构与文档编写均参考和借鉴了[ACGO-API-collect](https://github.com/xiaosuyyds/ACGO-API-collect)在此由衷的感谢！
+~~本来只是想要做一个ACGO的爬虫……~~
 
 ## 🍴目录
 
