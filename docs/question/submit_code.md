@@ -1,6 +1,6 @@
 # 提交代码
 
-> https://gateway.acgo.cn/acgoPms/question-answer-record/submit
+> <https://gateway.acgo.cn/acgoPms/question-answer-record/submit>
 
 *请求方式：POST*
 *请求同步性：同步异步均可，建议使用同步提交*

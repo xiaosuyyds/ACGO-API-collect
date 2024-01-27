@@ -34,7 +34,7 @@
 
 ## warning ⚠️声明
 
-1. 本项目遵守 CC-BY-NC 4.0 协议，禁止一切商业使用，如需转载请注明作者 ID
+1. 本项目遵守 CC-BY-NC 4.0 协议，禁止一切商业使用，如需转载请注明作者
 2. **请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！**
 3. 利用本项目提供的接口、文档等造成不良影响及后果与本人无关
 4. 由于本项目的特殊性，可能随时停止开发或删档
@@ -51,42 +51,45 @@
 
 ## 鸣谢
 
-### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
+### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢
+
+（不是[bilibili-API-collect作者](https://github.com/SocialSisterYi)的续作！）\
 ~~其实本来只是想要做一个ACGO的爬虫~~
 
 ## 🍴目录
 
 计划整理分类 & 目录：(文档已完结请选中 checkbox)
-- [ ] [用户](docs/user)
-    - [ ] [用户信息](docs/user/user_info.md)
-    - [ ] 当前登陆账号的信息
-    - [ ] 登陆账号
-- [ ] [题目](docs/question)
-    - [ ] 获取题目信息
-    - [ ] [代码提交](docs/question/submit_code.md)
-    - [ ] 获取评测机信息
-    - [ ] 获取题解
-    - [ ] 获取题解详细信息
-    - [ ] 发送题解
-- [ ] 讨论
-    - [ ] 讨论信息
-    - [ ] 讨论列表
-    - [ ] 发送讨论评论
-    - [ ] 发送讨论
-    - [ ] 获取讨论评论
-- [ ] 主页
-    - [ ] 主页排行榜
-- [ ] 团队
-    - [ ] 获取团队信息
-    - [ ] 创建团队
-    - [ ] 删除团队
-    - [ ] 获取用户分组
-    
 
-     
+- [ ] [用户](docs/user)
+  - [ ] [用户信息](docs/user/user_info.md)
+  - [ ] 当前登陆账号的信息
+  - [ ] 登陆账号
+- [ ] [题目](docs/question)
+  - [ ] 获取题目信息
+  - [ ] [代码提交](docs/question/submit_code.md)
+  - [ ] 获取评测机信息
+  - [ ] 获取题解
+  - [ ] 获取题解详细信息
+  - [ ] 发送题解
+- [ ] 讨论
+  - [ ] 讨论信息
+  - [ ] 讨论列表
+  - [ ] 发送讨论评论
+  - [ ] 发送讨论
+  - [ ] 获取讨论评论
+- [ ] 主页
+  - [ ] 主页排行榜
+- [ ] 团队
+  - [ ] 获取团队信息
+  - [ ] 创建团队
+  - [ ] 删除团队
+  - [ ] 获取用户分组
+
 ## 交流
+
 ### ⚠注意：开源社群欢迎交流探讨，拒绝咨询、不支持合作，黑产号一经发现立即拉黑并举报相关 SRC
- - QQ交流群 [加群链接](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m7l22Rbe39Jpoe2MVwZBdR1GNJFCTSGO&authKey=qwwomxgR8Nudz7uVnuEj3R9mphn6%2FEVzMZ%2FviimtZKimuaJjdqsat%2FHbYuuvLNdN&noverify=0&group_code=830159613)
+
+- QQ交流群 [加群链接](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m7l22Rbe39Jpoe2MVwZBdR1GNJFCTSGO&authKey=qwwomxgR8Nudz7uVnuEj3R9mphn6%2FEVzMZ%2FviimtZKimuaJjdqsat%2FHbYuuvLNdN&noverify=0&group_code=830159613)
 
 ## 历史Star
 

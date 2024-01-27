@@ -1,14 +1,14 @@
 # 用户基本信息
 
-> https://gateway.acgo.cn/acgoAccount/openapi/user/detail
+> <https://gateway.acgo.cn/acgoAccount/openapi/user/detail>
 
 *请求方式：GET*
 
 **url参数：**
 
-| 参数名 | 类型 | 内容        | 必要性 | 备注                                 |
-| ------ | ---- | ----------- | ------ | -----------------------------------|
-| uid    | num  | 目标用户uid | 必要   |                                     |
+| 参数名 | 类型 | 内容        | 必要性  | 备注         |
+| ------ | ---- | ---------- | ------ | ------------ |
+| uid    | num  | 目标用户uid | 必要   |              |
 
 **json回复：**
 
@@ -55,10 +55,10 @@
 
 
 **示例：**
-查询用户`uid=2484958`的详细信息
+查询用户`uid=1`的详细信息
 ```shell
 curl -G 'https://gateway.acgo.cn/acgoAccount/openapi/user/detail' \
-	--data-urlencode 'uid=2484958'
+	--data-urlencode 'uid=1'
 ```
 
 <details>
@@ -66,35 +66,35 @@ curl -G 'https://gateway.acgo.cn/acgoAccount/openapi/user/detail' \
   
 ```json
 {
-  "code": 200,
-  "message": "success",
-  "data": {
-    "uid": 2484958,
-    "blockStatus": 1,
-    "nickName": "Evan",
-    "avatar": "https://attach.acgo.cn/picture/2bde8a3a5a1149a0b9ceb3ca43146459.png",
-    "sex": 0,
-    "birthday": 0,
-    "registerTime": 1684942636,
-    "school": null,
-    "city": null,
-    "autograph": "疯子自有疯子之趣味,不足为外人道也。| 没有BUG的代码是不完美的！|小号：徐付豫",
-    "followNumber": 14,
-    "fanNumber": 51,
-    "followStatus": 4,
-    "userRankScore": 0,
-    "honorary": null,
-    "rankRing": null,
-    "rankId": null,
-    "userRankVo": {
-      "userRankScore": 0,
-      "honorary": "倔强青铜",
-      "rankRing": 200,
-      "rankId": 1
+    "code": 200,
+    "message": "success",
+    "data": {
+        "uid": 1,
+        "blockStatus": 1,
+        "nickName": "130****6960",
+        "avatar": "https://attach.acgo.cn/picture/default.png",
+        "sex": 0,
+        "birthday": 0,
+        "registerTime": 1687846398,
+        "school": null,
+        "city": null,
+        "autograph": "love acgo",
+        "followNumber": 0,
+        "fanNumber": 1,
+        "followStatus": 4,
+        "userRankScore": 0,
+        "honorary": null,
+        "rankRing": null,
+        "rankId": null,
+        "userRankVo": {
+            "userRankScore": null,
+            "honorary": "倔强青铜",
+            "rankRing": null,
+            "rankId": 1
+        },
+        "isCreateTeam": false
     },
-    "isCreateTeam": false
-  },
-  "timestamp": 1706360031
+    "timestamp": 1706385645
 }
 ```
 
