@@ -51,7 +51,7 @@
 
 ## 鸣谢
 
-### 本仓库目录结构与文档编写均参考和借鉴了[ACGO-API-collect](https://github.com/xiaosuyyds/ACGO-API-collect)在此由衷的感谢！
+### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
 ~~本来只是想要做一个ACGO的爬虫……~~
 
 ## 🍴目录
