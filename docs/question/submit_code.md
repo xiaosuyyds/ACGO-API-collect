@@ -15,8 +15,8 @@
 
 **Http请求头：**
 
-| 参数名 | 类型 | 内容        | 必要性 | 备注                                 |
-| ------ | ---- | ----------- | ------ | -----------------------------------|
+| 参数名           | 类型   | 内容        | 必要性 | 备注                                 |
+| --------------- | ----    | ----------- | ------ | -----------------------------------|
 | Access-Token    | string  | 用户在登录后系统会返回给用户，详情见docs/user/user_login.md | 必要   |                                     |
 | Content-Type    | "application/json"  | 按照内容直接填写即可，不需要做出任何改变。 | 必要   |                                     |
 
@@ -24,12 +24,12 @@
 
 根对象：
 
-| 字段      | 类型 | 内容     | 备注                                                          |
-| --------- | ---- | -------- | ------------------------------------------------------------ |
-| code      | num  | 返回值   | 200：成功<br />500：用户不存在（如注销账号）                      |
-| message   | str  | 错误信息 | ok                                                 |
-| data      |  obj  | 信息本体 |                                                              |
-| timestamp | num | 当前的Unix时间戳 |                                                        |
+| 字段      | 类型 | 内容             | 备注                                                          |
+| --------- | --- | ---------------  | ------------------------------------------------------------ |
+| code      | num | 返回值           | 200：成功<br />500：用户不存在（如注销账号）                     |
+| message   | str | 错误信息         | ok                                                            |
+| data      | obj | 信息本体         |                                                                |
+| timestamp | num | 当前的Unix时间戳  |                                                                |
 
 `data`对象：
 
@@ -46,23 +46,36 @@
 
 **示例：**
 提交题目`questionID=1`的详细信息
-```javascript
-function submit_code(){
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', "https://gateway.acgo.cn/acgoPms/question-answer-record/submit", false);
-        xhr.setRequestHeader("Access-Token", "参考登陆api。");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        var data = {
-            answer: ["// A+B\n\n#include <iostream>\nusing namespace std;\n\nint main(){\n    int a, b;\n    cin >> a >> b;\n    long sum = a+b;\n    cout << sum << endl;\n    return 0;\n}"],
-            pmsQuestionVersionId: "1020789",
-            questionId: "1"
-        }
-        xhr.onload = function(){
-            console.log(xhr.responseText);
-            return 0;
-        }
-        xhr.send(JSON.stringify(data));
+```python
+import requests
+
+def submit_code():
+    url = "https://gateway.acgo.cn/acgoPms/question-answer-record/submit"
+    access_token = "参考登陆api。"
+    headers = {
+        "Access-Token": access_token,
+        "Content-Type": "application/json"
     }
+    data = {
+        "answer": ["""// A+B
+
+#include <iostream>
+nusing namespace std;
+int main(){
+    int a, b;
+    cin >> a >> b;
+    long sum = a+b;
+    cout << sum << endl;
+    return 0;
+}"""],
+        "pmsQuestionVersionId": "1020789",
+        "questionId": "1"
+    }
+
+    response = requests.post(url, headers=headers, json=data)
+    print(response.text)
+
+submit_code()
 ```
 
 <details>
