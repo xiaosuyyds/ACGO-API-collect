@@ -1,4 +1,4 @@
-<h1 align="center">ACGO API API收集与整理</h1>
+<h1 align="center">ACGO API 收集与整理</h1>
 <p align="center" class="shields">
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/issues" style="text-decoration:none">
         <img src="https://img.shields.io/github/issues/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub issues"/>
