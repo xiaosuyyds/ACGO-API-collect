@@ -9,9 +9,11 @@
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/network" style="text-decoration:none" >
         <img src="https://img.shields.io/github/forks/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub forks"/>
     </a>
+    <!--
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/actions">
         <img src="https://img.shields.io/github/actions/workflow/status/xiaosuyyds/ACGO-API-collect/vuepress-deploy.yml">
     </a>
+    -->
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/blob/master/LICENSE" style="text-decoration:none" >
         <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="GitHub license"/>
     </a>
