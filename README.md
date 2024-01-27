@@ -34,7 +34,7 @@
 
 ## warning ⚠️声明
 
-1. 本项目遵守 CC-BY-NC 4.0 协议，禁止一切商业使用，如需转载请注明作者 ID
+1. 本项目遵守 CC-BY-NC 4.0 协议，禁止一切商业使用，如需转载请注明作者
 2. **请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！**
 3. 利用本项目提供的接口、文档等造成不良影响及后果与本人无关
 4. 由于本项目的特殊性，可能随时停止开发或删档
@@ -52,6 +52,7 @@
 ## 鸣谢
 
 ### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
+（不是[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)作者的续作！）\
 ~~其实本来只是想要做一个ACGO的爬虫~~
 
 ## 🍴目录
