@@ -51,9 +51,7 @@
 
 ## 鸣谢
 
-### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢
-
-（不是[bilibili-API-collect作者](https://github.com/SocialSisterYi)的续作！）\
+### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
 ~~其实本来只是想要做一个ACGO的爬虫~~
 
 ## 🍴目录
