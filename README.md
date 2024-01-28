@@ -49,6 +49,8 @@
 1. 部分文档较旧，修改与更新没有跟进
 2. API收集不完全，本抓包能力有限…… 欢迎各位大佬提交pr来扩增本项目的API~
 
+更多信息请浏览 [贡献指南](CONTRIBUTING.md)
+
 ## 鸣谢
 
 ### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
