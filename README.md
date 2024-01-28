@@ -62,8 +62,9 @@
 
 - [ ] [用户](docs/user)
   - [ ] [用户信息](docs/user/user_info.md)
+  - [ ] [登陆账号(密码)](docs/user/login_password.md)
+  - [ ] 登陆账号(验证码)
   - [ ] 当前登陆账号的信息
-  - [ ] 登陆账号
 - [ ] [题目](docs/question)
   - [ ] 获取题目信息
   - [ ] [代码提交](docs/question/submit_code.md)
