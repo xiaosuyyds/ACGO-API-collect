@@ -1,10 +1,10 @@
-# ACGO-API-coliect贡献指南
+# ACGO-API-collect贡献指南
 
-欢迎来到 ACGO-API-coliect 社区贡献指南，本文主要面向需要进行提交贡献文档内容的用户。
+欢迎来到 ACGO-API-collect 社区贡献指南，本文主要面向需要进行提交贡献文档内容的用户。
 
 ## 总则
 
-[ACGO-API-coliect](https://github.com/xiaosuyyds/ACGO-API-collect/ACGO-API-coliect) 项目是一个仅用于学习研究、社区开源、公益性质的 [ACGO](https://www.acgo.cn/) API（应用程序接口） 文档，使用 [CC-BY-NC 4.0 协议](https://github.com/xiaosuyyds/ACGO-API-coliect/blob/master/LICENSE) 开源，它将无差别收集整理相关的**主站业务接口**。
+[ACGO-API-collect](https://github.com/xiaosuyyds/ACGO-API-collect) 项目是一个仅用于学习研究、社区开源、公益性质的 [ACGO](https://www.acgo.cn/) API（应用程序接口） 文档，使用 [CC-BY-NC 4.0 协议](https://github.com/xiaosuyyds/ACGO-API-collect/blob/master/LICENSE) 开源，它将无差别收集整理相关的**主站业务接口**。
 
 该项目使用 [MarkDown](https://zh.wikipedia.org/zh-cn/Markdown) 语法进行文档书写，按照业务类型及功能以 **路径** + **文件** 形式索引，任何用户都可通过 Pull Request 提供自己分析出的接口地址与使用说明。
 
@@ -25,7 +25,7 @@
 
 ### 路径
 
-路径层级应当与文档目录一致，以文件夹的形式存放在项目中的`/docs`路径下，命名统一使用英文，如`video`、`danmaku`、`comment`
+路径层级应当与文档目录一致，以文件夹的形式存放在项目中的`/docs`路径下，命名统一使用英文，如`user`、`question`
 
 二级、三级路径应当存在二级三级目录，以`README.md`的形式
 
