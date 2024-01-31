@@ -32,12 +32,6 @@
 
 本项目旨在对 [acgo.cn](https://www.acgo.cn/) 散落在世界各地的野生 API 进行收集整理，研究使用方法并对其进行说明，运用了黑箱法、控制变量法、代码逆向分析、拆包及反编译法、网络抓包法等研究办法
 
-APIFox同步仓库:
-
-1:https://acgo-api-collect.guppy.ltd/
-
-2:https://acgo-api-collect.apifox.cn
-
 ## warning ⚠️声明
 
 1. 本项目遵守 CC-BY-NC 4.0 协议，禁止一切商业使用，如需转载请注明作者
@@ -61,9 +55,6 @@ APIFox同步仓库:
 
 ### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
 ~~其实本来只是想要做一个ACGO的爬虫~~
-
-以下是我朋友做的ACGO爬虫:https://github.com/xufuyu/ACGO_crawler
-
 
 ## 🍴目录
 
