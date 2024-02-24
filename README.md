@@ -58,6 +58,11 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
 ## 🌼鸣谢🌼
 
 ### 本仓库目录结构与文档编写均参考和借鉴了[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)在此由衷的感谢！
+#### 感谢所有为此项目做出贡献的大大~你们的存在，让社区变得更加美好！
+<a href="https://github.com/xiaosuyyds/ACGO-API-collect/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xiaosuyyds/ACGO-API-collect&max=999" alt=感谢他们（鼓掌）！>
+</a>
+
 ~~其实本来只是想要做一个ACGO的爬虫~~
 
 ## 🍴目录📝
