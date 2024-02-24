@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./assets/img/logo.png" width="350" height="60" alt="Logo加载不出来（悲）">
+</p>
+
 <h1 align="center">ACGO API 收集与整理</h1>
 <p align="center" class="shields">
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/issues" style="text-decoration:none">
@@ -19,17 +23,12 @@
     </a>
 </p>
 
-<!--
-<p align="center" class="trendshift">
-  <a href="https://trendshift.io/repositories/3218" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/3218" alt="xiaosuyyds%2FACGO-API-collect | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
-  </a>
-</p>
--->
 
 <h3 align="center">野生API文档，不断更新中....</h3>
 
-本项目旨在对 [acgo.cn](https://www.acgo.cn/) 散落于世界各地的野生 API 进行收集整理，研究使用方法并对其进行说明，运用了黑箱法、控制变量法、代码逆向分析、拆包及反编译法、网络抓包法等研究办法
+本项目旨在对 [acgo.cn](https://www.acgo.cn/) 散落于世界各地的野生 API 进行收集整理，研究使用方法并对其进行说明，运用了黑箱法、控制变量法、代码逆向分析、拆包及反编译法、网络抓包法等研究办法。
+
+***非官方文档！***
 
 本文档探讨的对象是[acgo.cn](https://www.acgo.cn/)的API接口，若官方后续推出ACGO开放平台 或 小码王开放平台 都将不属于本项目范畴，请移步
 
