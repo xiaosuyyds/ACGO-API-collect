@@ -43,7 +43,7 @@
 
 接口地址下方需要注明接口的请求方式，如`GET`、`POST`、`PUT`等，使用 **斜体** 语法
 
-若接口存在认证或鉴权，需要在说明中注明，如`Cookie`（认证是针对用户的，鉴权是针对接口使用的
+若接口存在认证或鉴权，需要在说明中注明，如`Cookie`（认证是针对用户的，鉴权是针对接口使用的，若无鉴权或是认证可省略）
 
 其他使用说明也可写在这里，如`限制游客访问的信息需要登录`
 
@@ -75,6 +75,6 @@ TODO
 2. Issue 正文应对问题进行尽可能详细的描述，展开并聚焦有关的信息，例如：“在前端页面某地址 / APP 某界面会访问某 API（标明地址），它的某参数与文档中不符（标明文档地址）”
 3. 提出问题时注意 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) 并且 [别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways)
 
-同时，你还可以通过加入社群的方式参与讨论（包括但不限于本项目
+同时，你还可以通过加入社群的方式参与讨论（包括但不限于本项目）
 
-- QQ 交流群：[邀请链接](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m7l22Rbe39Jpoe2MVwZBdR1GNJFCTSGO&authKey=qwwomxgR8Nudz7uVnuEj3R9mphn6%2FEVzMZ%2FviimtZKimuaJjdqsat%2FHbYuuvLNdN&noverify=0&group_code=830159613)
+- ACGO-API-collect QQ 交流群：[邀请链接](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m7l22Rbe39Jpoe2MVwZBdR1GNJFCTSGO&authKey=qwwomxgR8Nudz7uVnuEj3R9mphn6%2FEVzMZ%2FviimtZKimuaJjdqsat%2FHbYuuvLNdN&noverify=0&group_code=830159613)
