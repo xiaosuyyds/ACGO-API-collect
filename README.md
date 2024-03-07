@@ -5,21 +5,20 @@
 <h1 align="center">ACGO API 收集与整理</h1>
 <p align="center" class="shields">
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/issues" style="text-decoration:none">
-        <img src="https://img.shields.io/github/issues/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub issues"/>
+        <img src="https://img.shields.io/github/issues/xiaosuyyds/ACGO-API-collect.svg?color=lightrey&style=for-the-badge" alt="GitHub issues"/>
     </a>
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/stargazers" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/stars/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub stars"/>
+        <img src="https://img.shields.io/github/stars/xiaosuyyds/ACGO-API-collect.svg?color=lightrey&style=for-the-badge" alt="GitHub stars"/>
     </a>
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/network" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/forks/xiaosuyyds/ACGO-API-collect.svg" alt="GitHub forks"/>
+        <img src="https://img.shields.io/github/forks/xiaosuyyds/ACGO-API-collect.svg?color=lightrey&style=for-the-badge" alt="GitHub forks"/>
     </a>
-    <!--
-    <a href="https://github.com/xiaosuyyds/ACGO-API-collect/actions">
-        <img src="https://img.shields.io/github/actions/workflow/status/xiaosuyyds/ACGO-API-collect/vuepress-deploy.yml">
-    </a>
-    -->
     <a href="https://github.com/xiaosuyyds/ACGO-API-collect/blob/master/LICENSE" style="text-decoration:none" >
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="GitHub license"/>
+        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?color=lightrey&style=for-the-badge" alt="GitHub license"/>
+    </a>
+    <br>
+    <a href="https://github.com/xiaosuyyds/MuRainBot2">
+        <img src="https://counter.seku.su/cmoe?name=acgoapi&theme=rule34" alt=""/>
     </a>
 </p>
 
