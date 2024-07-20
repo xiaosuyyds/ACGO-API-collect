@@ -10,12 +10,17 @@
 
 | 参数名      | 类型  | 内容           | 必要性 | 备注                                                    |
 |----------|-----|--------------|-----|-------------------------------------------------------|
-| ??       | str | 未知           | 必要  | 貌似与时间有关，暂不清楚，一段时间后就会失效（接口404）需要重新抓包                   |
+| ??       | str | 未知           | 必要  | 貌似与时间有关，暂不清楚，一段时间后就会失效（接口404）~~需要重新抓包~~               |
 | module   | str | 获取的内容类型（模式）  | 可选  | 不填写获取全部，可填参数：`all`：全部 `study`：学习 `depot`：站务 `rest`：灌水 |
 | tab      | str | 未知           | 可选  | 默认为`reply`，暂时不清楚作用                                    |
 | page     | int | 当前页数         | 可选  | 默认为第一页                                                |
 | pageSize | int | 一页最大能包含的讨论数量 | 可选  | 默认为20                                                 |
 
+现已找到获取第一个参数的方案：查看www.acgo.cn/discuss的html不难发现在head中发现类似如下的代码
+```
+<script src="//xmcdn.oss-cn-shanghai.aliyuncs.com/cpp_community/1.0.0/prod/_next/static/4YIrqs2Lf57cfJL4dDfXT/_ssgManifest.js" defer=""></script>
+```
+而这个url里面的`4YIrqs2Lf57cfJL4dDfX`正是第一个参数（`4YIrqs2Lf57cfJL4dDfX`会随时间变化需要隔一段时间重新获取）
 
 （↑除第一个参数外，其余URL参数好像是根据[讨论列表页面](https://www.acgo.cn/discuss)当前的URL参数来决定的，部分反过来也可以影响页面本身（例如`pageSize`）……有待研究）
 
