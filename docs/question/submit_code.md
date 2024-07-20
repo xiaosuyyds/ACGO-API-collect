@@ -49,11 +49,11 @@
 | list           | (?) | (?)          |                           |
 | ojSubmissionId | num | 提交记录编号       | 可以通过提交记录来获得每一个测试点的具体信息    |
 | status         | (?) | (?)          |                           |
-| language       | num | 提交的代码语言编号(?) | 此字典似乎一直是null              |
-| name           | (?) | (?)          | 此字典似乎一直是null              |
-| createdAt      | (?) | (?)          | 此字典似乎一直是null              |
-| maxCpuTime     | (?) | (?)          | 此字典似乎一直是null              | 
-| maxUsedMemory  | (?) | (?)          | 此字典似乎一直是null              |
+| language       | num | 提交的代码语言编号(?) | 此字段似乎一直是null              |
+| name           | (?) | (?)          | 此字段似乎一直是null              |
+| createdAt      | (?) | (?)          | 此字段似乎一直是null              |
+| maxCpuTime     | (?) | (?)          | 此字段似乎一直是null              | 
+| maxUsedMemory  | (?) | (?)          | 此字段似乎一直是null              |
 
 **示例：**
 提交题目`questionID=1`的详细信息
