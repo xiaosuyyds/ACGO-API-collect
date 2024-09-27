@@ -75,9 +75,9 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
   - [ ] 发送验证码
   - [ ] 登陆账号(验证码)
   - [ ] [当前登陆账号的信息](docs/user/login_info)
-- [ ] [题目](docs/question)
+- [ ] [题目](docs/problemset)
   - [ ] 获取题目信息
-  - [ ] [代码提交](docs/question/submit_code.md)
+  - [ ] [代码提交](docs/problemset/submit_code.md)
   - [ ] 获取评测机信息
   - [ ] 获取题解
   - [ ] 获取题解详细信息
