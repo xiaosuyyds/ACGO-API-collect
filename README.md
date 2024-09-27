@@ -49,7 +49,7 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
 
 1. 部分文档较旧，修改与更新没有跟进
 2. API收集不完全，本人抓包能力有限…… 欢迎各位大佬提交pr来扩增本项目的API~
-3. **!!!求助 由于本人逆向能力有限，跪求各位大佬帮忙破解一下登陆API的`Csrf-Token`与密码登陆的加密方法 （目前已知信息：此token由JS本地生成）!!!**
+3. ~~**!!!求助 由于本人逆向能力有限，跪求各位大佬帮忙破解一下登陆API的`Csrf-Token`与密码登陆的加密方法 （目前已知信息：此token由JS本地生成）!!!**~~找到了[其他方法](/docs/sgin/access-token.md)
 
 更多信息请浏览 [贡献指南](CONTRIBUTING.md)
 
@@ -66,6 +66,9 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
 ## 🍴目录📝
 
 计划整理分类 & 目录：(文档已完结请选中 checkbox)
+- [ ] [接口签名与验证](/docs/sgin)
+  - [ ] [Access-Token](/docs/sgin/access-token.md)
+  - [ ] Csrf-Token
 - [ ] [用户](docs/user)
   - [ ] [用户信息](docs/user/user_info.md)
   - [ ] [登陆账号(密码)](docs/user/login_password.md)
@@ -79,6 +82,7 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
   - [ ] 获取题解
   - [ ] 获取题解详细信息
   - [ ] 发送题解
+  - [ ] AI题目答疑
 - [ ] [讨论](docs/discuss)
   - [ ] 讨论信息
   - [ ] [讨论列表](docs/discuss/get_list.md)
@@ -92,6 +96,7 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
   - [ ] 创建团队
   - [ ] 删除团队
   - [ ] 获取用户分组
+- [ ] 私聊
 
 ## 💬交流🗨️
 
