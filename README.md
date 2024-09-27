@@ -31,7 +31,7 @@
 
 本文档探讨的对象是[acgo.cn](https://www.acgo.cn/)的API接口，若官方后续推出ACGO开放平台 或 小码王开放平台 都将不属于本项目范畴，请移步
 
-ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回数据大多为 JSON ，基本强制使用 https 协议 。
+ACGO大部分API采用GET、POST、以及WebSocket调用，目前没发现例外的接口。返回数据大多为 JSON ，基本不使用 https 协议。
 
 ## ⚠️️warning ⚠️声明
 
@@ -66,8 +66,8 @@ ACGO大部分API采用GET或POST调用，目前没发现例外的接口。返回
 ## 🍴目录📝
 
 计划整理分类 & 目录：(文档已完结请选中 checkbox)
-- [ ] [接口签名与验证](/docs/sgin)
-  - [ ] [Access-Token](/docs/sgin/access-token.md)
+- [ ] [接口签名与验证](docs/sgin)
+  - [ ] [Access-Token](docs/sgin/access-token.md)
   - [ ] Csrf-Token
 - [ ] [用户](docs/user)
   - [ ] [用户信息](docs/user/user_info.md)
