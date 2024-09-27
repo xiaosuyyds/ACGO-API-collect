@@ -1,6 +1,8 @@
 # 用户登陆
 
 > <https://gateway.acgo.cn/acgoAccount/openapi/oauth/loginByPassword>
+---
+> Csrf-Token暂未逆向，建议尝试[这个方法](../../docs/sgin/access-token.md)
 
 *请求方式：POST*
 *鉴权方式：Csrf-Token、`__request_client_time__`*
