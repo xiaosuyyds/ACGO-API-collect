@@ -69,6 +69,7 @@ ACGO大部分API采用GET、POST、以及WebSocket调用，目前没发现例外
 - [ ] [接口签名与验证](docs/sgin)
   - [ ] [Access-Token](docs/sgin/access-token.md)
   - [ ] Csrf-Token
+  - [ ] [NextData(buildId)](./docs/sgin/next_data.md)
 - [ ] [用户](docs/user)
   - [ ] [用户信息](docs/user/user_info.md)
   - [ ] [登陆账号(密码)](docs/user/login_password.md)
