@@ -1,6 +1,6 @@
 # 用户基本信息
 
-> <https://gateway.acgo.cn/acgoAccount/openapi/user/detail?{uid}>
+> <https://gateway.acgo.cn/acgoAccount/openapi/user/detail?uid={uid}>
 
 *请求方式：GET*
 
@@ -26,7 +26,7 @@
 | 字段           | 类型   | 内容     | 备注                                                       |
 |--------------|------|--------|----------------------------------------------------------|
 | uid          | num  | 此用户ID  |                                                          |
-| blockStatus  | num  | 封号状态   | 未封号为1                                                    |
+| blockStatus  | num  | 封号状态   | 未封号为1，被禁言为2，被封禁为3                                        |
 | nickName     | str  | 昵称     |                                                          |
 | avatar       | str  | 头像链接   | 无法直接访问。若未设置则是https://attach.acgo.cn/picture/default.png。 |
 | sex          | num  | 性别     | 0：未知<br />1：男<br />2：女（无法直接设置）                           |
