@@ -1,5 +1,208 @@
 # 获取讨论列表
 
+近期似乎acgo多数API改版，讨论列表现已以页面内嵌JS的形式获取，不再使用API，有待研究。
+内嵌JS大多数id为：`"__NEXT_DATA__"`
+
+`pageProps`对象：
+
+| 字段        | 类型  | 内容    | 备注       |
+|-----------|-----|-------|----------|
+| listData  | obj | 数据本体  |          |
+
+`pageProps`中的`listData`对象：
+
+| 字段    | 类型    | 内容         | 备注 |
+|-------|-------|------------|----|
+| list  | array | 数据本体（讨论列表） |    |
+| emptyType | num | 空列表状态 | 1为非空，2为空 |
+| total | num   | 总条数        |    |
+
+`pageProps`中的`listData`中的`list`对象：
+
+| 字段            | 类型   | 内容      | 备注                             |
+|---------------|------|---------|--------------------------------|
+| userId        | num  | 用户 ID   | 讨论发起者的 ACGO 社区 UID 编号。         |
+| title         | str  | 讨论标题    |                                |
+| postId        | num  | 讨论ID    |                                |
+| digest        | str  | 讨论摘要    |                                |
+| questionId    | int  | 问题ID（?） | 默认为0，暂未发现此字段为非零的讨论             |
+| type          | null | 未知      | 暂未发现`type`字段为非null的用户          |
+| questionTitle | null | 未知      | 暂未发现`questionTitle`字段为非null的用户 |
+| viewNum       | int  | 阅读数     |                                |
+| commentNum    | int  | 评论数     |                                |
+| likeNum       | int  | 点赞数     |                                |
+| placeName     | str  | 用户所在地   | 为用户发帖时IP的地理位置（大多为省份），中文        |
+| isTop         | int  | 是否置顶    | 0：否 1：是                        |
+| isLike        | int  | 未知      | 目前所有讨论 `isLike` 字段均为0          |
+| updatedAt     | null | 更新时间    | 暂未发现`updatedAt`字段为非null的用户     |
+| content       | null | 讨论内容    | 暂未发现`content`字段为非null的用户       |
+| userVo        | obj  | 讨论发起人信息 |                                |
+| status        | null | 讨论状态    | 暂未发现`status`字段为非null的用户        |
+| module        | int  | 帖子的分区   | 1：学习讨论 2：站务中心 3：灌水池塘           |
+| isFeatured    | int  | 是否精华    | 0：否 1：是                        |
+
+
+类似于
+
+<details>
+<summary>展开以查看：</summary>
+
+```html
+<script id="__NEXT_DATA__" type="application/json">
+{
+    "props": {
+        "pageProps": {
+            "listData": {
+                "list": [
+                    {
+                        "userId": 4336036,
+                        "title": "个人题解| ACGO排位赛#14",
+                        "postId": 30852,
+                        "digest": "A. 混淆字符串\n\n按照题意模拟即可，将两个字符串中的混淆字符都改成相同字符，最后判断两个字符串是否相等。\n\n时间复杂度O(n)O(n)O(n)\n\n\nB. 循环小数\n\n按照题意模拟，找到循环节，输出循环节即可。\n\n当余数 xxx 为 0 的时候的时候证明能够除尽，输出0即可，否则当等到 xxx 上一次出现过的时候输出证明找到了循环节，输出循环节即可。\n\n细节见代码，时间复杂度O(n)O(n)O(n)\n\n\nC. 特殊的染料\n\n注意到 nnn 很小，因此考虑直接暴力。\n\n贪心的考虑，因为最后要把所有桶按顺序排好，所以一个桶一定会通过交换换到他应该在的地方，如果先把最大的桶放好，那么这个桶在之后一定不会与其他的桶发生交换，这样显然更优。\n\n因此我们能够得到一个策略，从大到小把对应的桶给直接放好即可。而每次选择交换的容器的时候，可以 O(n)O(n)O(n) 暴力求出花费最小的交换容器。\n\n整体时间复杂度 O(n3)O(n^3)O(n3)\n\n\nD. 君往何处\n\n搜索。\n\n注意剪枝优化，不然会 TLE。\n\n细节见代码，注意每次应该让最前面的手指匹配音符，这个过程可以拿一个堆来维护。\n\n实测跑的挺快，最慢的点也只跑了 50ms50ms50ms ， 时间复杂度为目测估计为 O(n)O(n)O(n) ，常数略大。\n\n\nE. 万圣糖果\n\n毒瘤 dp 题，写了好久，估计想复杂了。\n\n注意到只有两种形式的修改\n\n * 第一种就是找两个不相交的区间，然后每个区间施法一次\n * 第二种就是两个区间相交，重叠部分的点会施法两次，其余点施法一次，这种情况可以转换为一个大区间施法一次，在这个大区间的一个小区间里面会施法两次\n\n以这两种状态设计转移方程做 dp 即可\n\n细节特别多，具体细节见代码，时间复杂度 O(n)O(n)O(n)\n\n\nF. 可变数组\n\n考察线段树。\n\n如果你不知道线段树是什么，可以点这里：线段树 - OI Wik。\n\n第一种操作和第二种操作都是线段树的单点修改，第三种操作是线段树的区间查询，第四种操作是线段树区间二分查询。\n\n注意操作四不可以二分右边界再使用线段树查询，来找到第一个大于等于 xxx 的元素，这样的时间复杂度会是 nlog⁡(n)log⁡(n)n\\log(n)\\log(n)nlog(n)log(n) 的，在本题会TLE，只有 90 pts 。\n\n操作四可以优化成 nlog⁡(n)n\\log(n)nlog(n) 的原因是线段树的查询实际上二分区间内的过程，如果左区间内的元素查询满足了要求则不用再去遍历右区间，直接返回即可。\n\n代码实现使用了快读，因为之前拿 nlog⁡(n)log⁡(n)n\\log(n)\\log(n)nlog(n)log(n) 的做法做的，想着能不能卡常过，事实上是不行。\n\n时间复杂度 O(nlog⁡(n))O(n\\log(n))O(nlog(n))\n\n写的比较赶，以后有时间部分题目的解释会改详细一点",
+                        "questionId": 0,
+                        "type": null,
+                        "questionTitle": null,
+                        "viewNum": 65,
+                        "commentNum": 8,
+                        "likeNum": 6,
+                        "placeName": "山东",
+                        "isTop": 1,
+                        "isLike": 0,
+                        "updatedAt": null,
+                        "content": null,
+                        "userVo": {
+                            "userId": 4336036,
+                            "nickName": "xueman",
+                            "account": null,
+                            "avatar": "https://attach.acgo.cn/picture/default.png",
+                            "rankId": 3,
+                            "blockStatus": 1,
+                            "honorary": "荣耀黄金",
+                            "userIdentities": [
+                            ]
+                        },
+                        "status": null,
+                        "module": 1,
+                        "isFeatured": 0
+                    },
+                    {
+                        "userId": 4236064,
+                        "title": "排位赛#14题解",
+                        "postId": 30920,
+                        "digest": "T1.混淆字符串\n函数 is_confusable 来判断两个字符串是否互为「混淆字符串」。这个函数首先定义了一个字典 confusable_pairs 来存储混淆字符对，然后遍历两个字符串的每个字符，检查它们是否相同或者是否互为混淆字符对。如果所有对应的字符都满足条件，则返回 \"Yes\"，否则返回 \"No\"。\n上代码\n\nT2.循环小数\nfind_repeating_cycle 来找出有理数 p/q\n的循环小数序列。这个函数使用了长除法的方法，通过一个字典 remainders 来记录每个余数出现的位置，以此来检测循环的开始。如果余数为0，则没有循环小数。如果余数之前出现过，那么从那个位置开始的序列就是循环序列。\n上代码\n\nT3.特殊的染料\n这道题目是一个典型的贪心算法问题，我们需要通过最少的金币消耗来将染料桶中的染料量从左到右递增排序。关键在于理解如何通过交换操作来实现排序，并且如何计算每次交换所需的金币消耗。\n我们需要理解题目中的“倒换”操作。每次交换操作涉及到三个桶：i、i+1 和 j。我们需要将 i 或 i+1 中的染料倒入 j 中，然后再将 j 中的染料倒入 i 或 i+1 中，完成倒换。这个过程需要消耗金币，金币的消耗取决于 j 桶中染料的颜色。\n上代码\n\n如果这个题解能帮到你，麻烦点个赞",
+                        "questionId": 0,
+                        "type": null,
+                        "questionTitle": null,
+                        "viewNum": 12,
+                        "commentNum": 1,
+                        "likeNum": 1,
+                        "placeName": "广东",
+                        "isTop": 1,
+                        "isLike": 0,
+                        "updatedAt": null,
+                        "content": null,
+                        "userVo": {
+                            "userId": 4236064,
+                            "nickName": "双面人",
+                            "account": null,
+                            "avatar": "https://attach.acgo.cn/picture/f6b3d7c45d3f4a7ab321a661d61d2e14.png",
+                            "rankId": 3,
+                            "blockStatus": 1,
+                            "honorary": "荣耀黄金",
+                            "userIdentities": [
+                            ]
+                        },
+                        "status": null,
+                        "module": 3,
+                        "isFeatured": 0
+                    }
+                    ],
+                    "total": 9846
+                },
+                "emptyType": 1,
+                "tdk": {
+                    "title": "ACGO讨论社区-信息学编程算法训练讨论区-ACGO题库",
+                    "keywords": "ACGO讨论社区,编程算法训练,ACGO题库",
+                    "description": "ACGO(Acgo.Cn)是专业的编程算法训练平台，ACGO致力于为参加CSP-J/S、GESP、NOIP、NOI、ACM、CSP、CCPC、ICPC竞赛的选手提供清爽、快捷的编程训练刷题体验。适合初级小白C++编程入门训练，包含CSP入门级提高级赛前集训、提高组普及组训练，ACM区域赛前多校训练营，是学习noip等竞赛时理想的网站。"
+                },
+                "tabs": [
+                    {
+                        "label": "最新回复",
+                        "key": "reply",
+                        "href": "/discuss/",
+                        "preventDefault": true
+                    },
+                    {
+                        "label": "最新发布",
+                        "key": "public",
+                        "href": "/discuss/?tab=public",
+                        "preventDefault": true
+                    },
+                    {
+                        "label": "精华帖",
+                        "key": "essence",
+                        "href": "/discuss/?tab=essence",
+                        "preventDefault": true
+                    }
+                ]
+            },
+            "practiceMenuInfo": {
+                "match": [
+                    {
+                        "matchName": "CSP-J/S",
+                        "matchSourceId": 1,
+                        "examLanguage": "3,2"
+                    },
+                    {
+                        "matchName": "NOC",
+                        "matchSourceId": 7,
+                        "examLanguage": "3,2"
+                    },
+                    {
+                        "matchName": "蓝桥杯",
+                        "matchSourceId": 8,
+                        "examLanguage": "3,2"
+                    }
+                ],
+                "exam": [
+                    {
+                        "matchName": "GESP",
+                        "matchSourceId": 2,
+                        "examLanguage": "2,3"
+                    },
+                    {
+                        "matchName": "CPA",
+                        "matchSourceId": 3,
+                        "examLanguage": "3,2"
+                    },
+                    {
+                        "matchName": "电子学会考级",
+                        "matchSourceId": 4,
+                        "examLanguage": "3,2"
+                    }
+                ],
+                "timestamp": 1730913701
+            },
+            "__N_SSP": true
+        },
+        "page": "/discuss",
+        "query": {
+        },
+        "buildId": "69gccbQttspVDW3WFoSsR",
+        "assetPrefix": "//xmcdn.oss-cn-shanghai.aliyuncs.com/cpp_community/1.0.0/prod",
+        "isFallback": false,
+        "gssp": true,
+        "appGip": true,
+        "scriptLoader": [
+        ]
+    }
+</script>
+```
+
+</details>
+
+# ！！！下述API已失效，请勿使用！！！
+
 > <https://www.acgo.cn/_next/data/{??}/discuss.json>
 
 *请求方式：GET*
