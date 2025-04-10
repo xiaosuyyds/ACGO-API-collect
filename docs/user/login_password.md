@@ -20,11 +20,11 @@
 
 **Http请求头：**
 
-| 参数名          | 类型  | 内容           | 必要性 | 备注                 |
-|--------------|-----|--------------|-----|--------------------|
-| Csrf-Token   | str | Csrf-Token   | 必要  | 未知的鉴权方式，待逆向        |
-| Content-Type | str | Content-Type | 必要  | "application/json" |
-| Fp2          | str | (?)          | 必要? | (?)                |
+| 参数名          | 类型  | 内容               | 必要性 | 备注                 |
+|--------------|-----|------------------|-----|--------------------|
+| Csrf-Token   | str | Csrf-Token       | 必要  | 未知的鉴权方式，待逆向        |
+| Content-Type | str | Content-Type     | 必要  | "application/json" |
+| Fp2          | str | FingerprintJS2指纹 | 必要? | (?)                |
 
 
 **json回复：**
